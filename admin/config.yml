@@ -19,6 +19,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
 files:
   - label: "Members"
+    create: true
     name: "members"
     file: "_data/members.yml"
     fields:
