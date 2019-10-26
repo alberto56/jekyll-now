@@ -1,4 +1,5 @@
 ---
-Title: Hello
+layout: post
+title: Hello
 ---
 
