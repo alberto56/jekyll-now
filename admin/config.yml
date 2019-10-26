@@ -7,7 +7,7 @@ backend:
   base_url: https://netlify-oauth.dcycle.com
 media_folder: 'assets/uploads'
 collections:
-  - name: 'blog'
+  - name: 'blog posts'
     create: true
     label: 'Blog'
     folder: '_posts/'
@@ -17,15 +17,31 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - label: "Members"
-    create: true
-    name: "members"
-    file: "_data/members.yml"
-    fields:
+  - name: "members"
+    label: "Members"
+    editor:
+      preview: false
+    files:
       - label: "Members"
-        name: "items"
-        widget: "list"
+        create: true
+        file: "_data/members.yml"
         fields:
-          - {label: Name, name: name, widget: string}
-          - {label: "Github Username", name: github, widget: string}
-
+          - label: "Members"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: "Github Username", name: github, widget: string}
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'About Page'
+        name: 'about'
+        file: 'about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'About' }
+          - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/about/' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
