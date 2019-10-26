@@ -23,6 +23,7 @@ collections:
       preview: false
     files:
       - label: "Members"
+        name: "members"
         create: true
         file: "_data/members.yml"
         fields:
