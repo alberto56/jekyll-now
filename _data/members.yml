@@ -1,10 +1,7 @@
-# See https://www.netlifycms.org/docs/jekyll/
 items:
-  - name: Eric Mill
-    github: konklone
-
-  - name: Parker Moore
-    github: parkr
-
-  - name: Liu Fengyun
-    github: liufengyun
+  - github: parkr
+    name: Parker Moore
+  - github: konklone
+    name: Eric Mill
+  - github: liufengyun
+    name: Liu Fengyun
