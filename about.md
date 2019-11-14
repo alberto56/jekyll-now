@@ -1,8 +1,11 @@
 ---
-layout: page
 title: About
 permalink: /about/
+layout: page
 ---
+OK this is an about page.
+
+
 
 Some information about you!
 
@@ -12,4 +15,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+<mailto:email@domain.com>
