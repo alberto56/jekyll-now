@@ -3,7 +3,7 @@ backend:
   repo: alberto56/jekyll-now
   base_url: https://suresh-issue-82.dcycleproject.org
   branch: master
-  auth_endpoint: /auth/github/repo/6946e3fd7c6e2b059bec66c3
+  auth_endpoint: /auth/github/repo/694f515b18f56cc358266541
 media_folder: assets/uploads
 collections:
   - name: blog posts
